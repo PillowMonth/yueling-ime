@@ -1,0 +1,272 @@
+# encoding: utf-8
+---
+name: "yueling.roots"
+version: "20260302"
+sort: original
+columns:
+  - text
+  - code
+...
+
+真靈字根編碼提示	/ml
+輸入對應大碼字母	/ml
+丆习厂虍虎車金食鱼	/mlb
+⺀二亍亥匕正毛犬豸貝	/mlc
+〇〢〣丨了予僉口合夭子孑气牙目见高	/mld
+一丂丄上卜巾舌言门鹵	/mlf
+丶乀亦卅卌彐爿片肀隶隹页	/mlg
+⺌乙乚亅八大小巛巜川弓爪瓜石舟飛	/mlh
+丑丿乜也來寸文木朩灬田示走非	/mlj
+三人力古向囗戈戊斤月未末白穴耳自身长	/mlk
+⻍之壬夕夫己已巳巴广方日曰辶門鬥	/mll
+丌兀入卯咼夊尸攵王至车長镸骨髟魚	/mlm
+不丩丱儿冊凵勹匚屮山干止見贝辛齒	/mln
+亠宀尚工心由申电矢糸艮馬	/mlp
+七且乌冂弋早水氺甫立鸟	/mlq
+几手曲殳用皮皿缶罒西酉頁風麻	/mlr
+丁丅下乃又廴彑母甲癶禺禾竹米里革	/mls
+世亡十火牛瓦生甶羊马鬼鹿黑	/mlt
+㔾丷卩土士臼豕雨	/mlv
+业乂九其冖女尢尤戶户戸欠疒而面	/mlw
+丬丰千厶彡彳耂虫足	/mlx
+刀幺廾烏臣艹辰鳥	/mly
++ ce = 車	/mlb
++ hu = 虍虎	/mlb
++ i = 习	/mlb
++ o = 金	/mlb
++ si = 食	/mlb
++ u = 厂丆	/mlb
++ yo = 鱼	/mlb
++ bo = 貝	/mlc
++ cu = 亍	/mlc
++ ho = 亥	/mlc
++ i = 匕	/mlc
++ ja = ⺀二	/mlc
++ ko = 	/mlc
++ me = 毛	/mlc
++ o = 犬	/mlc
++ u = 正	/mlc
++ vi = 豸	/mlc
++ vu = 	/mlc
++ a = 僉	/mld
++ e = 〢〣	/mld
++ ge = 高	/mld
++ he = 合	/mld
++ i = 口	/mld
++ je = 孑	/mld
++ ja = 见	/mld
++ ki = 气	/mld
++ ke = 	/mld
++ le = 了	/mld
++ mu = 目	/mld
++ o = 丨予	/mld
++ u = 〇	/mld
++ vi = 子	/mld
++ yi = 牙	/mld
++ yo = 夭	/mld
++ a = 言	/mlf
++ e = 	/mlf
++ i = 一	/mlf
++ jo = 巾	/mlf
++ ke = 丂	/mlf
++ lu = 鹵	/mlf
++ ma = 门	/mlf
++ o = 丄上	/mlf
++ pu = 卜	/mlf
++ se = 舌	/mlf
++ u = 	/mlf
++ a = 丶乀卅	/mlg
++ e = 	/mlg
++ i = 卌隶	/mlg
++ ji = 彐	/mlg
++ jo = 肀	/mlg
++ o = 隹	/mlg
++ pa = 片	/mlg
++ u = 爿	/mlg
++ yi = 亦	/mlg
++ ye = 页	/mlg
++ a = 八	/mlh
++ co = 巛巜川	/mlh
++ da = 大	/mlh
++ e = 	/mlh
++ fo = 飛	/mlh
++ ge = 弓	/mlh
++ gu = 瓜	/mlh
++ i = 乙乚亅	/mlh
++ o = 	/mlh
++ si = 石	/mlh
++ u = 爪	/mlh
++ vi = 舟	/mlh
++ xo = ⺌小	/mlh
++ bo = 灬	/mlj
++ ci = 丑	/mlj
++ co = 寸	/mlj
++ e = 丿也	/mlj
++ fo = 非	/mlj
++ lo = 來	/mlj
++ me = 乜	/mlj
++ si = 示	/mlj
++ ta = 田	/mlj
++ u = 木朩	/mlj
++ vi = 走	/mlj
++ ve = 	/mlj
++ wo = 文	/mlj
++ wu = 	/mlj
++ a = 人	/mlk
++ bo = 白	/mlk
++ co = 长	/mlk
++ de = 	/mlk
++ do = 	/mlk
++ e = 月	/mlk
++ gu = 古	/mlk
++ ge = 戈	/mlk
++ i = 	/mlk
++ jo = 斤	/mlk
++ ja = 耳	/mlk
++ li = 力	/mlk
++ mo = 末	/mlk
++ su = 三	/mlk
++ sa = 身	/mlk
++ vi = 自	/mlk
++ wo = 囗未	/mlk
++ wu = 戊	/mlk
++ xi = 向	/mlk
++ xe = 穴	/mlk
++ a = 巴	/mll
++ di = 鬥	/mll
++ e = ⻍辶	/mll
++ fu = 夫	/mll
++ fo = 方	/mll
++ ge = 广	/mll
++ i = 之	/mll
++ ji = 己	/mll
++ ma = 門	/mll
++ ra = 壬	/mll
++ ri = 日	/mll
++ si = 巳	/mll
++ xi = 夕	/mll
++ yi = 已	/mll
++ ye = 曰	/mll
++ bo = 髟	/mlm
++ ce = 车	/mlm
++ co = 長镸	/mlm
++ e = 王	/mlm
++ gu = 骨	/mlm
++ i = 丌	/mlm
++ me = 卯	/mlm
++ ru = 入	/mlm
++ si = 尸	/mlm
++ u = 咼	/mlm
++ vu = 夊攵	/mlm
++ vi = 至	/mlm
++ wu = 兀	/mlm
++ yo = 魚	/mlm
++ a = 儿	/mln
++ bu = 不	/mln
++ bo = 贝	/mln
++ ce = 冊屮	/mln
++ ci = 齒	/mln
++ e = 丩凵勹	/mln
++ fo = 匚	/mln
++ go = 丱	/mln
++ gu = 干	/mln
++ ja = 見	/mln
++ su = 山	/mln
++ vi = 止	/mln
++ xo = 辛	/mln
++ a = 宀电	/mlp
++ e = 工	/mlp
++ ga = 艮	/mlp
++ i = 亠糸	/mlp
++ ma = 馬	/mlp
++ so = 尚	/mlp
++ sa = 申	/mlp
++ si = 矢	/mlp
++ xo = 心	/mlp
++ yo = 由	/mlp
++ e = 早	/mlq
++ i = 七	/mlq
++ je = 冂	/mlq
++ ke = 且	/mlq
++ li = 立	/mlq
++ no = 鸟	/mlq
++ o = 水氺	/mlq
++ u = 甫	/mlq
++ wu = 乌	/mlq
++ yi = 弋	/mlq
++ e = 	/mlr
++ fu = 風	/mlr
++ fi = 缶	/mlr
++ i = 西	/mlr
++ ji = 几	/mlr
++ ko = 曲	/mlr
++ mo = 皿	/mlr
++ ma = 麻	/mlr
++ o = 用	/mlr
++ pi = 皮	/mlr
++ si = 手	/mlr
++ u = 殳	/mlr
++ we = 罒	/mlr
++ ye = 頁	/mlr
++ yo = 酉	/mlr
++ du = 丁丅	/mls
++ e = 	/mls
++ ge = 革	/mls
++ he = 禾	/mls
++ i = 下	/mls
++ ji = 彑甲	/mls
++ li = 里	/mls
++ mu = 母	/mls
++ mi = 米	/mls
++ no = 乃	/mls
++ o = 又廴癶	/mls
++ u = 竹	/mls
++ yo = 禺	/mls
++ yi = 	/mls
++ e = 火	/mlt
++ ho = 黑	/mlt
++ i = 十	/mlt
++ lu = 鹿	/mlt
++ le = 	/mlt
++ ma = 马	/mlt
++ no = 牛	/mlt
++ o = 鬼	/mlt
++ si = 世	/mlt
++ u = 生甶	/mlt
++ we = 亡	/mlt
++ wu = 瓦	/mlt
++ yi = 羊	/mlt
++ e = 丷	/mlv
++ i = 士	/mlv
++ je = 㔾卩	/mlv
++ o = 臼	/mlv
++ si = 豕	/mlv
++ u = 土	/mlv
++ yo = 雨	/mlv
++ e = 冖尢	/mlw
++ hu = 户戸	/mlw
++ i = 乂	/mlw
++ jo = 九	/mlw
++ ja = 而	/mlw
++ ki = 其	/mlw
++ ka = 欠	/mlw
++ ma = 面	/mlw
++ ne = 疒	/mlw
++ o = 女	/mlw
++ u = 戶	/mlw
++ ye = 业	/mlw
++ yo = 尤	/mlw
++ e = 	/mlx
++ i = 丬厶彳	/mlx
++ ka = 千	/mlx
++ le = 耂	/mlx
++ o = 虫	/mlx
++ u = 丰彡	/mlx
++ vu = 足	/mlx
++ a = 臣	/mly
++ ca = 辰	/mly
++ e = 刀廾艹	/mly
++ i = 	/mly
++ no = 鳥	/mly
++ wu = 烏	/mly
++ yo = 幺	/mly
