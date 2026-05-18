@@ -1,0 +1,4 @@
+patch:
+  schema_list:
+    - schema: yueling              # 標準模式
+    - schema: yueling_complete     # 頂真、瞬閃雙模上屏版
