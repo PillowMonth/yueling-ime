@@ -1,4 +1,6 @@
 patch:
   schema_list:
     - schema: yueling              # 標準模式
-    - schema: yueling_complete     # 頂真、瞬閃雙模上屏版
+    - schema: yueling_complete     # 頂真、瞬閃雙模上屏版；
+                                   # 附带 z 键反查模式以词定字功能：使用「」或，。上屏词组首字或末字；
+                                   # 附带分号引导快符功能：分号 + [a~z] 快速上屏对应符号。
