@@ -75,6 +75,7 @@ engine:
     - lua_processor@*yuhao.yuhao_switch_proc@yuhao_macro
     - ascii_composer
     - recognizer
+    - lua_processor@force_semicolon_as_code      # 新插入项
     - key_binder
     - lua_processor@*yuhao.yuhao_word_select            # z模式以詞定字
     - lua_processor@*yuhao.instant_autocommit           # 即時上屏（開關控制）
@@ -135,19 +136,18 @@ schema_name:
   code: yueling
   code_tw: yueling_tw
   chaifen: yueling_chaifen
-  chaifen_tw: yueling_chaifen_tw
   chaifen_code_all_roots: true
   max_code_length: 4
   words: yueling
 
 speller:
-  alphabet: zyxwvutsrqponmlkjihgfedcba/
-  initials: zyxwvutsrqponmlkjihgfedcba/
+  alphabet: zyxwvutsrqponmlkjihgfedcba/=;
+  initials: zyxwvutsrqponmlkjihgfedcba/=;
   delimiter: "`"
   algebra:
     - derive/^([a-y])([a-y])/$1z/
   auto_select: true
-  auto_select_pattern: ""
+  auto_select_pattern: "^;[a-z]$"
 
 translator:
   dictionary: yueling_complete
@@ -303,6 +303,18 @@ recognizer:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
+
+force_semicolon_as_code:
+  lua: |
+    function processor(key_event, env)
+      local ctx = env.engine.context
+      if key_event:repr() == "semicolon" and not ctx.ascii_mode then
+        ctx.input = ctx.input .. ";"
+        key_event:accept()
+        return 1
+      end
+      return 0
+    end    
 
 menu:
   page_size: 5

@@ -24,6 +24,7 @@ import_tables:
   - yuhao/yuhao.extended
   # 以下是符號
   - yuhao/yuhao.symbols
+  - yuhao/yuhao.symbols_kuai.dict
 columns:
   - text
   - code
