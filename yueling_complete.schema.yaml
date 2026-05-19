@@ -75,7 +75,7 @@ engine:
     - lua_processor@*yuhao.yuhao_switch_proc@yuhao_macro
     - ascii_composer
     - recognizer
-    - lua_processor@force_semicolon_as_code      # 新插入项
+    - lua_processor@force_semicolon_as_code      # 分號快符支持
     - key_binder
     - lua_processor@*yuhao.yuhao_word_select            # z模式以詞定字
     - lua_processor@*yuhao.instant_autocommit           # 即時上屏（開關控制）
