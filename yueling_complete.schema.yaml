@@ -16,8 +16,6 @@ schema:
   dependencies:
     - yuhao_pinyin
     - yueling_chaifen
-    - yueling_chaifen_tw
-    - yueling_pop
 
 switches:
   - name: yuhao_autocommit
@@ -75,9 +73,9 @@ engine:
     - lua_processor@*yuhao.yuhao_switch_proc@yuhao_macro
     - ascii_composer
     - recognizer
-    - lua_processor@force_semicolon_as_code      # 分號快符支持
+    - lua_processor@force_semicolon_as_code            #  分號快符支持
     - key_binder
-    - lua_processor@*yuhao.yuhao_word_select            # z模式以詞定字
+    - lua_processor@*yuhao.z_word_select            # z模式以詞定字
     - lua_processor@*yuhao.instant_autocommit           # 即時上屏（開關控制）
     - lua_processor@*yuhao.yuhao_auto_select_postponed  # 延時頂屏（原版）
     - speller
@@ -98,7 +96,7 @@ engine:
     - table_translator
     - lua_translator@*yuhao.yuhao_switch_tr@yuhao_macro
   filters:
-    - lua_filter@*yuhao.yuhao_hide_space_candidates
+    - lua_filter@*yuhao.yuhao_hide_space_candidates 
     - lua_filter@*yuhao.yuhao_autocompletion_filter
     - lua_filter@*yuhao.yuhao_single_char_only_for_full_code
     - lua_filter@*yuhao.yuhao_charset_filter_common
@@ -140,6 +138,7 @@ schema_name:
   max_code_length: 4
   words: yueling
 
+####################  如需關閉快符功能請註釋以下內容  ####################
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba/=;
   initials: zyxwvutsrqponmlkjihgfedcba/=;
@@ -148,6 +147,28 @@ speller:
     - derive/^([a-y])([a-y])/$1z/
   auto_select: true
   auto_select_pattern: "^;[a-z]$"
+
+force_semicolon_as_code:
+  lua: |
+    function processor(key_event, env)
+      local ctx = env.engine.context
+      if key_event:repr() == "semicolon" and not ctx.ascii_mode then
+        ctx.input = ctx.input .. ";"
+        key_event:accept()
+        return 1
+      end
+      return 0
+    end    
+###########  如需關閉快符功能請註釋以上內容，並清除以下內容註釋  ###########
+# speller:
+  # alphabet: zyxwvutsrqponmlkjihgfedcba/
+  # initials: zyxwvutsrqponmlkjihgfedcba/
+  # delimiter: "`"
+  # algebra:
+    # - derive/^([a-y])([a-y])/$1z/
+  # auto_select: true
+  # auto_select_pattern: ""
+##################  如需關閉快符功能請清除以上內容註釋  ##################
 
 translator:
   dictionary: yueling_complete
@@ -303,18 +324,6 @@ recognizer:
     uppercase: "^(?![`;]).*[A-Z][-_+.'0-9A-Za-z]*$"
     reverse_lookup: "^z([a-z]+?)*$"
     punct: "^/([0-9]0?|[A-Za-z]+)?$"
-
-force_semicolon_as_code:
-  lua: |
-    function processor(key_event, env)
-      local ctx = env.engine.context
-      if key_event:repr() == "semicolon" and not ctx.ascii_mode then
-        ctx.input = ctx.input .. ";"
-        key_event:accept()
-        return 1
-      end
-      return 0
-    end    
 
 menu:
   page_size: 5

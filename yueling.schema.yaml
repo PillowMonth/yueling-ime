@@ -16,8 +16,6 @@ schema:
   dependencies:
     - yuhao_pinyin
     - yueling_chaifen
-    - yueling_chaifen_tw
-    - yueling_pop
 
 switches:
   - options:
