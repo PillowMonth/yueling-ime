@@ -8,9 +8,7 @@ version: "20260522"
 sort: original
 import_tables:
   # 以下是簡碼字詞，空格上屏
-  - yuhao/yueling.quick_simp                  #  僅避重單字空格簡 + 一二簡詞
-  # - yuhao/yueling.quick                   #  全空格簡（含三簡詞）
-  # - yuhao/yueling.quick_single                  #  全單字空格簡
+  - yuhao/yueling.quick                  #  僅避重單字空格簡 + 一二簡詞
   # 以下是簡碼字詞，韻碼上屏
   - yuhao/yueling.pop
   # 以下是單字全碼，包括陸標、臺標、港標、兼容拆分
